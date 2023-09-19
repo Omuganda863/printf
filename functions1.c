@@ -2,14 +2,14 @@
 
 /************************* PRINT UNSIGNED NUMBER *************************/
 /**
- * print_unsigned - Prints an unsigned number
- * @types: List a of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed.
+ * print_unsigned - Prints an unsigned integer
+ * @types: Arguments
+ * @buffer: Buffer array.
+ * @flags:  active flags
+ * @width:  width
+ * @precision: Precision.
+ * @size: Size.
+ * Return: Number of chars.
  */
 int print_unsigned(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -35,16 +35,16 @@ int print_unsigned(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN OCTAL  ****************/
+/************* PRINT UNSIGNED INTEGER IN OCTAL  ****************/
 /**
- * print_octal - Prints an unsigned number in octal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * print_octal - Prints an unsigned INTEGER
+ * @types: arguments
+ * @buffer: Buffer array
+ * @flags:  Active flags
+ * @width:  width
+ * @precision: Precisio
+ * @size: Sizes
+ * Return:chars printed
  */
 int print_octal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -77,16 +77,16 @@ int print_octal(va_list types, char buffer[],
 	return (write_unsgnd(0, i, buffer, flags, width, precision, size));
 }
 
-/************** PRINT UNSIGNED NUMBER IN HEXADECIMAL **************/
+/************** PRINT UNSIGNED NUMBER IN HEXA**************/
 /**
- * print_hexadecimal - Prints an unsigned number in hexadecimal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * print_hexadecimal - unsigned number in hexa
+ * @types: arguments
+ * @buffer: Buffer array
+ * @flags:  Active flags
+ * @width: Width
+ * @precision: Precision
+ * @size: Size
+ * Return: Number of char
  */
 int print_hexadecimal(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -95,16 +95,16 @@ int print_hexadecimal(va_list types, char buffer[],
 		flags, 'x', width, precision, size));
 }
 
-/************* PRINT UNSIGNED NUMBER IN UPPER HEXADECIMAL **************/
+/************* PRINT UNSIGNED NUMBER IN UPPER Hex **************/
 /**
- * print_hexa_upper - Prints an unsigned number in upper hexadecimal notation
- * @types: Lista of arguments
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * Return: Number of chars printed
+ * print_hexa_upper - Prints an unsigned int in upper hex
+ * @types: arguments
+ * @buffer: Buffer arr
+ * @flags:  active flags
+ * @width:  width
+ * @precision: Precision
+ * @size: Size
+ * Return: chars printed
  */
 int print_hexa_upper(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -113,19 +113,19 @@ int print_hexa_upper(va_list types, char buffer[],
 		flags, 'X', width, precision, size));
 }
 
-/************** PRINT HEXX NUM IN LOWER OR UPPER **************/
+/************** PRINT HEX NUM IN LOWER OR UPPER **************/
 /**
- * print_hexa - Prints a hexadecimal number in lower or upper
- * @types: Lista of arguments
- * @map_to: Array of values to map the number to
- * @buffer: Buffer array to handle print
- * @flags:  Calculates active flags
- * @flag_ch: Calculates active flags
- * @width: get width
- * @precision: Precision specification
- * @size: Size specifier
- * @size: Size specification
- * Return: Number of chars printed
+ * print_hexa - Outputs a hexadecimal number in lower or upp
+ * @types: arguments
+ * @map_to: Array of val
+ * @buffer: Buffer arr
+ * @flags:  active flags
+ * @flag_ch: active flags
+ * @width: width
+ * @precision: Precision
+ * @size: Size
+ * @size: Size
+ * Return: Number of char
  */
 int print_hexa(va_list types, char map_to[], char buffer[],
 	int flags, char flag_ch, int width, int precision, int size)
